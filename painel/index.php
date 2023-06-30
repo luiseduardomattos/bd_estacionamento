@@ -26,9 +26,8 @@
                         <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li><br><br>
                     <li class="nav-item">
-                        <a class="nav-link" href="clientes.php">Usuario</a>
+                        <a class="nav-link" href="../usuario/novo.php">Usuario</a>
                     </li>
-
                 </ul>
             </div>
         </div>

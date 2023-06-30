@@ -1,11 +1,11 @@
 <?php
 include "../includes/conexao.php";
-$id = $_GET["id"];
+$id = $_GET["codigo"];
 
 $nome = $_POST["nome"];
-$sql = "update t_usuario set nome = '$nome' where id = $id";
+$sql = "update t-usuario set nome = '$nome' where codigo = $id";
 mysqli_query($conexao, $sql);
-mysqli_close($conesao);
+mysqli_close($conexao);
 
 header("location: selecionar.php");
 

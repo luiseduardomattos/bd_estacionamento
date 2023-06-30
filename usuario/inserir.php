@@ -1,12 +1,19 @@
 <?php
 include "../includes/conexao.php";
-$id = $_GET["id"];
 
 $nome = $_POST["nome"];
-$sql = "insert into bd_estacionamento(nome) values('$nome');
+$sql = "insert into t-usuario(nome) values('$nome')";
 mysqli_query($conexao, $sql);
-mysqli_close($conesao);
+mysqli_close($conexao);
 
-header('location: selecionar.php');
 
+
+header("location:selecionar.php");
 ?>
+
+
+
+
+
+
+

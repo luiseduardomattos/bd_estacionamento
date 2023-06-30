@@ -21,10 +21,10 @@ include "../includes/conexao.php";
 </tr>
 
 <?php
-    $sql = "select * from t_usuario";
+    $sql = "select * from t-usuario";
     $todos_os_usuarios = mysqli_query($conexao, $sql);
-    while(um_usuario = mysqli_fetch_assoc($todos_os_usuarios));
-
+    while($um_usuario = mysqli_fetch_assoc($todos_os_usuarios));
+?>
 
 
 <tr>
@@ -34,17 +34,14 @@ include "../includes/conexao.php";
 <td><?php echo $um_usuario['estado'];?></td>
 <td><?php echo $um_usuario['data_nascimento'];?></td>
 <td><?php echo $um_usuario['tipo'];?></td>
+</tr>
+<tr>
 <td>
     <a href="#">visualizar</a>
     <a href="#">Editar</a>
     <a href="#">Excluir</a>
 </td>
 </tr>
-
-
-endwhile;
-?>
-
 
 </table>
 

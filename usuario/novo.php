@@ -3,9 +3,9 @@ include "../includes/cabecalho.php";
 ?>
 
 <main class="container">
-    <form adtion = "inserir.php" method="post">
+    <form action ="inserir.php" method="post">
     nome: <input name="nome">
-    <button tuype="submit">SALVAR</button>
+    <button type="submit">SALVAR</button>
     </form>
 </main>
 

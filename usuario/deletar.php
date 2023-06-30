@@ -1,10 +1,10 @@
 <?php
 include "../includes/conexao.php";
-$id = $_GET["id"];
+$id = $_GET["codigo"];
 
-$sql = "delete from t_usuario where id=$id";
+$sql = "delete from t-usuario where codigo = $id";
 mysqli_query($conexao, $sql);
-mysqli_close($conesao);
+mysqli_close($conexao);
 
 header("location: selecionar.php");
 
