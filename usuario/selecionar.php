@@ -21,7 +21,7 @@ include "../includes/conexao.php";
 </tr>
 
 <?php
-    $sql = "select * from t-usuario";
+    $sql = "select * from t_usuario";
     $todos_os_usuarios = mysqli_query($conexao, $sql);
     while($um_usuario = mysqli_fetch_assoc($todos_os_usuarios));
 ?>
@@ -37,9 +37,9 @@ include "../includes/conexao.php";
 </tr>
 <tr>
 <td>
-    <a href="#">visualizar</a>
-    <a href="#">Editar</a>
-    <a href="#">Excluir</a>
+    <a href="visualizar.php">visualizar</a>
+    <a href="editar.php">Editar</a>
+    <a href="deletar.php">Excluir</a>
 </td>
 </tr>
 
